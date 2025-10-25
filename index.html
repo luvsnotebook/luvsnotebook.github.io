@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>❤️ Luv’s Notebook</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow fixed w-full top-0 z-10">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html" class="flex items-center space-x-2">
-        <span class="text-2xl">❤️</span>
-        <span class="text-xl font-semibold text-gray-900 hover:text-blue-600 transition">Luv’s Notebook</span>
+<body class="bg-white text-black font-sans leading-relaxed p-6">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2 text-2xl font-semibold text-blue-700 hover:text-blue-800">
+        <span>❤️</span>
+        <span>Luv’s Notebook</span>
       </a>
-      <a href="ori.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ORI Entry Point</a>
-    </div>
-  </nav>
+      <ul class="flex space-x-8 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="ori.html" class="hover:text-blue-600">ORI Entry Point</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Centered Hero -->
-  <div class="flex flex-col items-center justify-center h-screen text-center">
-    <div class="mt-[-80px]"> <!-- offset for fixed navbar -->
-      <h1 class="text-6xl font-bold mb-4">❤️ Luv’s Notebook</h1>
-    </div>
-  </div>
+  <!-- Padding for fixed header -->
+  <div class="pt-24"></div>
+
+  <!-- Centered Hero Section -->
+  <main class="flex flex-col items-center justify-center min-h-[80vh] text-center">
+    <h1 class="text-7xl md:text-8xl font-extrabold mb-4 text-gray-900 tracking-tight">❤️ Luv’s Notebook</h1>
+    <p class="text-xl md:text-2xl text-gray-600 max-w-2xl">
+      Open research, shared ideas, and creative experiments — a living notebook of systems, meaning, and design.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 mt-16">
+    © 2025 Luv’s Notebook — Built with ❤️ and open tools.
+  </footer>
 
 </body>
 </html>
